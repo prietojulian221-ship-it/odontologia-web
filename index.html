@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clínica Dental</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #A9CCE3;
+      color: #000000;
+    }
+
+    .top-bar {
+      padding: 1rem 5%;
+      font-weight: 600;
+      font-size: 1.5rem;
+      background-color: #D6EAF8;
+      font-family: 'Playfair Display', serif;
+      color: #000000;
+    }
+
+    .main-section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 3rem 5%;
+      gap: 2rem;
+    }
+
+    .text-content {
+      flex: 1 1 450px;
+      max-width: 600px;
+    }
+
+    .text-content h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1.2rem;
+      color: #000000;
+      font-family: 'Playfair Display', serif;
+      font-weight: 600;
+    }
+
+    .text-content p {
+      font-size: 1.05rem;
+      margin-bottom: 1rem;
+      font-weight: 400;
+    }
+
+    .cta {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      background-color: #D6EAF8;
+      border-left: 4px solid #00A884;
+      padding: 1rem;
+      margin-top: 1rem;
+      font-weight: 500;
+      border-radius: 6px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 0.8rem 1.8rem;
+      background-color: #00A884;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #00906c;
+    }
+
+    .image-content {
+      flex: 1 1 400px;
+      text-align: center;
+    }
+
+    .image-content img {
+      max-width: 100%;
+      max-height: 600px;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    }
+
+.services-section {
+  padding: 3rem 5%;
+  background-color: #EAECEE;
+}
+
+.services-section h2 {
+  font-size: 2.8rem;
+  margin-bottom: 3rem;
+  color: #000000;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2.5rem;
+}
+
+.service {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.service:hover {
+  transform: translateY(-5px);
+}
+
+.service img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 0 8px rgba(0,0,0,0.15);
+}
+
+.service h3 {
+  font-family: 'Playfair Display', serif;
+  color: #000000;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.service p {
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: #21618C;
+  line-height: 1.6;
+}
+
+
+    .footer {
+      background-color: #D6EAF8;
+      text-align: center;
+      padding: 1.5rem 1rem;
+      font-size: 1rem;
+      color: #000000;
+      font-weight: 500;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    @media (max-width: 768px) {
+      .main-section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .text-content h1 {
+        font-size: 2rem;
+      }
+
+      .btn {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Doctor arriba a la izquierda -->
+  <div class="top-bar">Doctor Carlos Andrés Pinzón Bolaños</div>
+
+  <!-- Sección Principal -->
+  <section class="main-section">
+    <div class="text-content">
+      <h1>Especialistas en Endodoncia e Implantes Dentales</h1>
+      <p>En nuestra clínica dental nos especializamos en brindar una atención odontológica integral, personalizada y de alta calidad. Creemos que una sonrisa sana no solo mejora la salud, sino también la confianza y la calidad de vida de nuestros pacientes.</p>
+
+      <p>Contamos con un equipo de profesionales capacitados, tecnología moderna y un enfoque humano que nos permite ofrecer diagnósticos precisos y tratamientos efectivos para todas las edades. Desde limpiezas dentales y ortodoncia, hasta tratamientos estéticos y rehabilitaciones completas, trabajamos para que cada visita al odontólogo sea una experiencia cómoda, segura y satisfactoria.</p>
+
+      <p>Nuestro compromiso es cuidar tu salud oral con ética, responsabilidad y calidez. Te invitamos a conocernos y a dar el primer paso hacia una mejor sonrisa.</p>
+
+      <div class="cta">📅 Agenda tu cita hoy mismo y empieza a sonreír con confianza.</div>
+      <a href="https://wa.me/573114749094" class="btn" target="_blank">Contáctame por WhatsApp</a>
+    </div>
+
+    <div class="image-content">
+      <img src="doctor.png" alt="Doctor Carlos Andrés Pinzón">
+    </div>
+  </section>
+
+  <!-- Sección de Servicios con Imágenes -->
+  <section class="services-section">
+    <h2>Servicios</h2>
+    <div class="services">
+      <div class="service">
+        <img src="endodoncia.jpg" alt="Endodoncia">
+        <h3>Endodoncia</h3>
+        <p>La endodoncia es un tratamiento dental que consiste en eliminar la pulpa dañada o infectada del interior del diente, limpiarlo y sellarlo. Se realiza para salvar piezas dentales que, de otro modo, tendrían que extraerse.</p>
+      </div>
+      <div class="service">
+        <img src="implantes.jpg" alt="Implantes">
+        <h3>Implantes</h3>
+        <p>Son estructuras de titanio que se colocan en el hueso maxilar para reemplazar dientes perdidos. Actúan como raíces artificiales y permiten colocar coronas fijas que lucen y funcionan como dientes naturales.</p>
+      </div>
+      <div class="service">
+        <img src="estetica.png" alt="Estética">
+        <h3>Estética</h3>
+        <p>Blanqueamiento, carillas y diseño de sonrisa para mejorar la armonía dental.</p>
+      </div>
+      <div class="service">
+        <img src="cirugias.png" alt="Cirugías">
+        <h3>Cirugías</h3>
+        <p>Extracciones, muelas del juicio, implantes y otros procedimientos quirúrgicos.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pie de página -->
+  <footer class="footer">
+    <p><strong>Carlos Andrés Pinzón Bolaños</strong></p>
+    <p>Ubicación: Cra70 #105-17</p>
+    <p>Contacto: +57 311 4749094</p>
+  </footer>
+
+</body>
+</html>
